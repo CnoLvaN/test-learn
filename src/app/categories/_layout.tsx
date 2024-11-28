@@ -5,7 +5,12 @@ import { Ionicons } from "@expo/vector-icons";
 export default function CategoriesLayout() {
   return (
     <Stack>
-      {/* <Stack.Screen name="Categories" options={{ headerShown: false }} /> */}
+      <Stack.Screen
+        name="[slug]"
+        options={{
+          headerShown: true,
+        }}
+      />
     </Stack>
   );
 }

@@ -49,7 +49,7 @@ const ProductDetails = () => {
     addItem({
       id: product.id,
       title: product.title,
-      heroImage: product.heroImage,
+      image: product.heroImage,
       price: product.price,
       quantity,
     });
