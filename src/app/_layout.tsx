@@ -1,9 +1,12 @@
 import { Stack } from "expo-router";
+import { StatusBar } from "expo-status-bar";
+import { Platform } from "react-native";
 import { ToastProvider } from "react-native-toast-notifications";
 
 export default function RootLayout() {
   return (
     <ToastProvider>
+      <StatusBar style={Platform.OS === "ios" ? "light" : "auto"} />
       <Stack>
         <Stack.Screen
           name="(shop)"
