@@ -9,6 +9,7 @@ import {
 import { useForm, Controller } from "react-hook-form";
 import * as zod from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { Stack } from "expo-router";
 
 const authSchema = zod.object({
   email: zod.string().email({ message: "Invalid email address" }),
@@ -41,6 +42,7 @@ export default function Auth() {
       style={styles.backgroundImage}
     >
       <View style={styles.overlay} />
+      {/* <Stack.Screen options={{ headerShown: false }} /> */}
 
       <View style={styles.container}>
         <Text style={styles.title}>Welcome</Text>
